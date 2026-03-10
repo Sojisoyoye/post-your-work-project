@@ -25,7 +25,12 @@ def get_filters():
             print("Invalid input. Please enter a valid city name.")
 
     # get user input for month (all, january, february, ... , june)
-
+    while True:
+        month = input("Please enter the month you want to analyze (all, january, february, ... , june): ").lower()
+        if month in ['all', 'january', 'february', 'march', 'april', 'may', 'june']:
+            break
+        else:
+            print("Invalid input. Please enter a valid month name.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
